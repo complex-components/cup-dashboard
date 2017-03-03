@@ -1,0 +1,41 @@
+{
+  "name": "stat",
+  "version": "1.0.0",
+  "description": "Statistics generator for CCC Cup Dashboard",
+  "main": "index.js",
+  "author": "froano@knowit.no",
+  "license": "MIT",
+  "scripts": {
+    "start:server": "babel-node src/index.js"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.22.2",
+    "babel-preset-env": "^1.1.8",
+    "babel-preset-stage-2": "^6.22.0"
+  },
+  "babel": {
+    "presets": [
+      [
+        "env",
+        {
+          "targets": {
+            "node": "current"
+          }
+        }
+      ],
+      "stage-2"
+    ],
+    "env": {
+      "test": {
+        "plugins": [
+          "rewire"
+        ]
+      }
+    }
+  },
+  "dependencies": {
+    "express": "^4.14.1",
+    "standard": "^8.6.0",
+    "body-parser": "^1.16.0"
+  }
+}
