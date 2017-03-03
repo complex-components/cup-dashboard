@@ -1,10 +1,16 @@
 {
   "name": "dash",
+  "description": "CCC Cup Dashboard",
   "version": "0.1.0",
-  "private": true,
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:complex-components/cup-dashboard.git"
+  },
   "dependencies": {
     "react": "^15.4.2",
-    "react-dom": "^15.4.2"
+    "react-dom": "^15.4.2",
+    "standard": "^9.0.0"
   },
   "devDependencies": {
     "react-scripts": "0.9.3"

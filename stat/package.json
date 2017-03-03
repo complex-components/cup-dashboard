@@ -5,6 +5,10 @@
   "main": "index.js",
   "author": "froano@knowit.no",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:complex-components/cup-dashboard.git"
+  },
   "scripts": {
     "start:server": "babel-node src/index.js"
   },

@@ -1,14 +1,14 @@
 import express from 'express'
-import bodyParser from 'body-parser';
+import bodyParser from 'body-parser'
 
 const app = express()
 
-app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.urlencoded({ extended: true }))
 
 app.post('/register', async (req, res, next) => {
   const { repo } = req.body
-  
-  if (typeof(repo) == 'undefined') {
+
+  if (typeof (repo) === 'undefined') {
     console.log(`unknown parameters: ${req.body}`)
     res.sendStatus(404)
   } else {
