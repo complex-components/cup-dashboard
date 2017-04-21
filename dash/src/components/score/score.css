@@ -1,0 +1,11 @@
+.score {
+  display: flex;
+  justify-content: flex-start;
+  align-self: stretch;
+}
+
+.score .part {
+  width: 40px;
+  background-color: #ddd;
+  margin: 2px;
+}

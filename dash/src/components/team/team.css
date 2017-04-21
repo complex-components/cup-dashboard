@@ -1,0 +1,24 @@
+.team {
+  color: #333;
+  height: 50px;
+  border: solid 1px #333;
+  font-size: large;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.team .position {
+  font-size: x-large;
+  margin-left: 50px;
+}
+
+.team .name {
+  color: red;
+  font-size: large;
+  margin-left: 50px;
+}
+
+.team .score {
+  margin-left: 50px;
+}
