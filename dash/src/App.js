@@ -5,7 +5,21 @@ import './App.css'
 
 class App extends Component {
   render () {
+    let pos = 0
+
     const teams = this.props.teams
+      .map(t => {
+        t.points = t.score.reduce((s, score, i) => {
+          return s + score.points
+        }, 0)
+        return t
+      })
+      .sort((t1, t2) => t1.points < t2.points)
+      .map(t => {
+        pos += 1
+        t.position = pos
+        return t
+      })
 
     return (
       <div className='App'>
@@ -16,7 +30,7 @@ class App extends Component {
         </div>
         <div className='teams'>
           {
-            teams.map(team => <Team team={team} />)
+            teams.map(team => <Team key={team.github} team={team} />)
           }
         </div>
       </div>

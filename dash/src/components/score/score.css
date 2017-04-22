@@ -6,6 +6,13 @@
 
 .score .part {
   width: 40px;
-  background-color: #ddd;
   margin: 2px;
+}
+
+.score .part.on {
+  background-color: #9d9;
+}
+
+.score .part.off {
+  background-color: #ddd;
 }

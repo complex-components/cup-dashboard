@@ -1,7 +1,7 @@
 export default [
   {
     name: 'Team R',
-    github: 'git@github.com:complex-components/cup-dashboard.git',
+    github: 'git@github.com:complex-components/team-r.git',
     score: [
       {
         item: 'Readme',
@@ -9,14 +9,13 @@ export default [
       },
       {
         item: 'NPM',
-        points: 0
+        points: 8
       }
-    ],
-    position: 1
+    ]
   },
   {
     name: 'Team E',
-    github: 'git@github.com:complex-components/cup-dashboard.git',
+    github: 'git@github.com:complex-components/team-e.git',
     score: [
       {
         item: 'Readme',
@@ -26,27 +25,37 @@ export default [
         item: 'NPM',
         points: 0
       }
-    ],
-    position: 2
+    ]
   },
   {
     name: 'Team A',
-    github: 'git@github.com:complex-components/cup-dashboard.git',
+    github: 'git@github.com:complex-components/team-a.git',
     score: [
       {
         item: 'Readme',
-        points: 4
+        points: 10
       },
       {
         item: 'NPM',
         points: 10
+      },
+      {
+        item: 'Test coverage',
+        points: 6
+      },
+      {
+        item: 'Code Style',
+        points: 8
+      },
+      {
+        item: 'CCC Rules',
+        points: 10
       }
-    ],
-    position: 3
+    ]
   },
   {
     name: 'Team C',
-    github: 'git@github.com:complex-components/cup-dashboard.git',
+    github: 'git@github.com:complex-components/team-c.git',
     score: [
       {
         item: 'Readme',
@@ -56,12 +65,11 @@ export default [
         item: 'NPM',
         points: 0
       }
-    ],
-    position: 4
+    ]
   },
   {
     name: 'Team T',
-    github: 'git@github.com:complex-components/cup-dashboard.git',
+    github: 'git@github.com:complex-components/team-t.git',
     score: [
       {
         item: 'Readme',
@@ -71,7 +79,6 @@ export default [
         item: 'NPM',
         points: 0
       }
-    ],
-    position: 5
+    ]
   }
 ]
