@@ -1,13 +1,18 @@
 import React, { Component } from 'react'
+import { connect } from 'react-redux'
 import logo from './cccc-logo.png'
 import Team from './components/team'
 import './App.css'
 
 class App extends Component {
+  componentDidUpdate () {
+    console.log(`componentDidUpdate`)
+  }
+
   render () {
     let pos = 0
-
     const teams = this.props.teams
+
       .map(t => {
         t.points = t.score.reduce((s, score, i) => {
           return s + score.points
@@ -38,4 +43,14 @@ class App extends Component {
   }
 }
 
-export default App
+export default connect(
+  (state) => {
+    return { teams: state }
+  },
+  (dispatch) => {
+    return {
+      // liftPiece: piece => dispatch(liftPiece(piece)),
+      // placePiece: (piece, target) => dispatch(placePiece(piece, target)),
+    }
+  }
+)(App)
