@@ -5,11 +5,11 @@ export default [
     score: [
       {
         item: 'Readme',
-        points: 2
+        points: 1
       },
       {
         item: 'NPM',
-        points: 8
+        points: 0
       }
     ]
   },
@@ -19,7 +19,7 @@ export default [
     score: [
       {
         item: 'Readme',
-        points: 4
+        points: 1
       },
       {
         item: 'NPM',
@@ -33,23 +33,11 @@ export default [
     score: [
       {
         item: 'Readme',
-        points: 10
+        points: 1
       },
       {
         item: 'NPM',
-        points: 10
-      },
-      {
-        item: 'Test coverage',
-        points: 6
-      },
-      {
-        item: 'Code Style',
-        points: 8
-      },
-      {
-        item: 'CCC Rules',
-        points: 10
+        points: 0
       }
     ]
   },
@@ -59,7 +47,7 @@ export default [
     score: [
       {
         item: 'Readme',
-        points: 4
+        points: 1
       },
       {
         item: 'NPM',
@@ -73,7 +61,7 @@ export default [
     score: [
       {
         item: 'Readme',
-        points: 2
+        points: 1
       },
       {
         item: 'NPM',
