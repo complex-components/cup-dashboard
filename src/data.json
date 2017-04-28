@@ -14,7 +14,7 @@
       },
       {
         "item": "Git usage",
-        "points": 2
+        "points": 3
       },
       {
         "item": "Reusability",
@@ -22,11 +22,11 @@
       },
       {
         "item": "Styling",
-        "points": 0
+        "points": 3
       },
       {
         "item": "Usability",
-        "points": 0
+        "points": 2
       },
       {
         "item": "Testing",
@@ -34,7 +34,7 @@
       },
       {
         "item": "Code quality",
-        "points": 0
+        "points": 3
       }
     ]
   },
