@@ -123,7 +123,7 @@
     "score": [
       {
         "item": "Readme",
-        "points": 1
+        "points": 5
       },
       {
         "item": "NPM",
@@ -131,7 +131,7 @@
       },
       {
         "item": "Git usage",
-        "points": 1
+        "points": 5
       },
       {
         "item": "Reusability",
@@ -139,7 +139,7 @@
       },
       {
         "item": "Styling",
-        "points": 0
+        "points": 3
       },
       {
         "item": "Usability",
@@ -151,7 +151,7 @@
       },
       {
         "item": "Code quality",
-        "points": 0
+        "points": 5
       }
     ]
   },
