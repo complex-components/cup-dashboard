@@ -65,15 +65,15 @@
       },
       {
         "item": "Usability",
-        "points": 0
+        "points": 2
       },
       {
         "item": "Testing",
-        "points": 0
+        "points": 5
       },
       {
         "item": "Code quality",
-        "points": 0
+        "points": 4
       }
     ]
   },
