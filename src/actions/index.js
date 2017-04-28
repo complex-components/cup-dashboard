@@ -35,12 +35,7 @@ export const updateData = () => {
 
   return (dispatch) => {
     const doFetch = () => {
-      fetch('https://raw.githubusercontent.com/complex-components/cup-dashboard/master/src/data.json',
-        {
-          method: 'GET',
-          mode: 'cors',
-          cache: 'no-cache'
-        })
+      fetch('https://raw.githubusercontent.com/complex-components/cup-dashboard/master/src/data.json', {cache: 'no-store'})
         .then(response => {
           console.log('json parsing')
           return response.json()
