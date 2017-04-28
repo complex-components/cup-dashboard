@@ -11,6 +11,30 @@ export default [
       {
         item: 'NPM',
         points: 0
+      },
+      {
+        item: 'Git usage',
+        points: 2
+      },
+      {
+        item: 'Reusability',
+        points: 3
+      },
+      {
+        item: 'Styling',
+        points: 0
+      },
+      {
+        item: 'Usability',
+        points: 0
+      },
+      {
+        item: 'Testing',
+        points: 0
+      },
+      {
+        item: 'Code quality',
+        points: 0
       }
     ]
   },
@@ -25,6 +49,30 @@ export default [
       },
       {
         item: 'NPM',
+        points: 0
+      },
+      {
+        item: 'Git usage',
+        points: 4
+      },
+      {
+        item: 'Reusability',
+        points: 6
+      },
+      {
+        item: 'Styling',
+        points: 3
+      },
+      {
+        item: 'Usability',
+        points: 0
+      },
+      {
+        item: 'Testing',
+        points: 0
+      },
+      {
+        item: 'Code quality',
         points: 0
       }
     ]
@@ -41,6 +89,30 @@ export default [
       {
         item: 'NPM',
         points: 0
+      },
+      {
+        item: 'Git usage',
+        points: 0
+      },
+      {
+        item: 'Reusability',
+        points: 0
+      },
+      {
+        item: 'Styling',
+        points: 0
+      },
+      {
+        item: 'Usability',
+        points: 0
+      },
+      {
+        item: 'Testing',
+        points: 0
+      },
+      {
+        item: 'Code quality',
+        points: 0
       }
     ]
   },
@@ -56,6 +128,30 @@ export default [
       {
         item: 'NPM',
         points: 0
+      },
+      {
+        item: 'Git usage',
+        points: 1
+      },
+      {
+        item: 'Reusability',
+        points: 8
+      },
+      {
+        item: 'Styling',
+        points: 0
+      },
+      {
+        item: 'Usability',
+        points: 0
+      },
+      {
+        item: 'Testing',
+        points: 0
+      },
+      {
+        item: 'Code quality',
+        points: 0
       }
     ]
   },
@@ -70,6 +166,30 @@ export default [
       },
       {
         item: 'NPM',
+        points: 0
+      },
+      {
+        item: 'Git usage',
+        points: 1
+      },
+      {
+        item: 'Reusability',
+        points: 5
+      },
+      {
+        item: 'Styling',
+        points: 3
+      },
+      {
+        item: 'Usability',
+        points: 0
+      },
+      {
+        item: 'Testing',
+        points: 0
+      },
+      {
+        item: 'Code quality',
         points: 0
       }
     ]
