@@ -92,7 +92,7 @@
       },
       {
         "item": "Git usage",
-        "points": 0
+        "points": 4
       },
       {
         "item": "Reusability",
@@ -112,7 +112,7 @@
       },
       {
         "item": "Code quality",
-        "points": 0
+        "points": 3
       }
     ]
   },
