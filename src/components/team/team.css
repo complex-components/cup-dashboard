@@ -22,3 +22,9 @@
 .team .score {
   margin-left: 50px;
 }
+
+.members {
+  position: relative;
+  top: -15px;
+  font-size: small;
+}
