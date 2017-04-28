@@ -35,8 +35,14 @@ export const updateData = () => {
 
   return (dispatch) => {
     const doFetch = () => {
-      fetch('https://raw.githubusercontent.com/complex-components/cup-dashboard/master/src/data.json')
+      fetch('https://raw.githubusercontent.com/complex-components/cup-dashboard/master/src/data.json',
+        {
+          method: 'GET',
+          mode: 'cors',
+          cache: 'no-cache'
+        })
         .then(response => {
+          console.log('json parsing')
           return response.json()
         })
         .then(teams => {

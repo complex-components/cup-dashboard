@@ -1,6 +1,6 @@
 import { SHOW_TEAM, UPDATE_SCORE, REFRESH_DATA } from '../actions'
 
-export default (state = { teams: []}, action) => {
+export default (state = {teams: []}, action) => {
   switch (action.type) {
     case SHOW_TEAM: {
       console.log(`SHOW_TEAM: ${JSON.stringify(action.payload)}`)
@@ -13,7 +13,10 @@ export default (state = { teams: []}, action) => {
     }
 
     case REFRESH_DATA: {
-      return { ...state, teams: action.payload.teams }
+      return {
+        ...state,
+        teams: action.payload.teams
+      }
     }
 
     default:
