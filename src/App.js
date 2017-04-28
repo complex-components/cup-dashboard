@@ -2,18 +2,18 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import logo from './cccc-logo.png'
 import Team from './components/team'
-import { showTeam, updateScore } from './actions'
+import { showTeam, updateScore, updateData } from './actions'
 import './App.css'
 
 class App extends Component {
-  componentDidUpdate () {
-    console.log(`componentDidUpdate`)
+  componentDidMount () {
+    this.props.updateData()
   }
 
   render () {
     let pos = 0
     console.log(this.props)
-    const teams = this.props.teams
+    const teams = this.props.view.teams
       .map(t => {
         t.points = t.score.reduce((s, score, i) => {
           return s + score.points
@@ -27,11 +27,6 @@ class App extends Component {
         t.position = pos
         return t
       })
-
-    setTimeout(() => {
-      console.log(`Showing team ${this.props.teams[0].name}`)
-      showTeam(this.props.teams[0])
-    }, 3000)
 
     return (
       <div className='App'>
@@ -52,12 +47,13 @@ class App extends Component {
 
 export default connect(
   (state) => {
-    return { teams: state }
+    return { view: state }
   },
   (dispatch) => {
     return {
       showTeam: team => dispatch(showTeam(team)),
-      updateScore: team => dispatch(updateScore(team))
+      updateScore: team => dispatch(updateScore(team)),
+      updateData: () => dispatch(updateData())
     }
   }
 )(App)

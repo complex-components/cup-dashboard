@@ -1,13 +1,6 @@
-import data from '../data'
-import { SHOW_TEAM, UPDATE_SCORE } from '../reducers'
+import { SHOW_TEAM, UPDATE_SCORE, REFRESH_DATA } from '../actions'
 
-const initialState = data.map(t => {
-  t.visible = false
-  return t
-})
-
-export default (state = initialState, action) => {
-  console.log(`action: ${JSON.stringify(action)}`)
+export default (state = { teams: []}, action) => {
   switch (action.type) {
     case SHOW_TEAM: {
       console.log(`SHOW_TEAM: ${JSON.stringify(action.payload)}`)
@@ -17,6 +10,10 @@ export default (state = initialState, action) => {
     case UPDATE_SCORE: {
       console.log(`UPDATE_SCORE: ${JSON.stringify(action.payload)}`)
       return state
+    }
+
+    case REFRESH_DATA: {
+      return { ...state, teams: action.payload.teams }
     }
 
     default:

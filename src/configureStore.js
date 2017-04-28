@@ -1,8 +1,9 @@
 import { createStore, applyMiddleware } from 'redux'
 import rootReducer from './reducers'
 import { createLogger } from 'redux-logger'
+import thunk from 'redux-thunk'
 
-const middlewares = []
+const middlewares = [thunk]
 middlewares.push(createLogger())
 
 export default function () {
